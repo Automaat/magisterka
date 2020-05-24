@@ -5,6 +5,7 @@ services:
 
 before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - mkdir cpu-benchmark/.gradle
 
 script:
   - ./build_all.sh
