@@ -176,3 +176,25 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/osx,java,gradle,kotlin,intellij
+/.idea/magisterka.iml
+/.idea/misc.xml
+/cpu-benchmark/.idea/misc.xml
+/.idea/modules.xml
+/.idea/codeStyles/Project.xml
+/cpu-benchmark/.idea/codeStyles/Project.xml
+/.idea/sbt.xml
+/cpu-benchmark/.idea/sbt.xml
+/cpu-benchmark/.idea/uiDesigner.xml
+/cpu-benchmark/.idea/vcs.xml
+/.idea/$CACHE_FILE$
+/cpu-benchmark/.idea/$CACHE_FILE$
+/.idea/.gitignore
+/.idea/codeStyles/codeStyleConfig.xml
+/cpu-benchmark/.idea/codeStyles/codeStyleConfig.xml
+/cpu-benchmark/.idea/compiler.xml
+/cpu-benchmark/.idea/gradle.xml
+/cpu-benchmark/gradle/wrapper/gradle-wrapper.jar
+/io-benchmark/gradle/wrapper/gradle-wrapper.jar
+/cpu-benchmark/.idea/jarRepositories.xml
+/io-benchmark/gradle/wrapper/gradle-wrapper.jar
+/.idea/vcs.xml
