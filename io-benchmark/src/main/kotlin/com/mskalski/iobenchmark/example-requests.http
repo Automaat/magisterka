@@ -1,0 +1,19 @@
+POST http://localhost:8080/resource/123
+Accept: application/json
+Content-Type: application/json
+
+{
+"value": "some resource"
+}
+
+###
+
+GET http://localhost:8080/resource/123
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/resource/123
+Accept: application/json
+
+###
