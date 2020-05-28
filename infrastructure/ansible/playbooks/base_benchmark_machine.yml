@@ -1,5 +1,5 @@
 ---
-- hosts: magisterka
+- hosts: bench_machine
   become: true
   roles:
     - docker

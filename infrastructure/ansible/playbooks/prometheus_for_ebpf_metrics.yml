@@ -1,0 +1,9 @@
+---
+- hosts: metrics
+  become: true
+  roles:
+    - role: docker
+    - role: ebpf_prometheus
+      monitored_host_port: 9435
+      monitored_host_path: '/metrics'
+      job_name: 'ebpf_exporter'

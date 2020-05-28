@@ -1,10 +1,10 @@
 ---
-- hosts: magisterka
+- hosts: bench_machine
   become: true
   tasks:
-    - name: start io benchmarking container
+    - name: start network io benchmarking container
       docker_container:
-        name: io-benchmark
-        image: automaat/io-benchmark
+        name: network_io_benchmark
+        image: automaat/network_io_benchmark
         ports:
           - "8080:8080"

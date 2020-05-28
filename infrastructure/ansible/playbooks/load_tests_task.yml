@@ -1,0 +1,8 @@
+---
+- hosts: metrics
+  become: true
+  tasks:
+    - name: start load tests
+      docker_container:
+        name: load_tests
+        image: automaat/load_tests
