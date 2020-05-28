@@ -2,7 +2,14 @@
 - hosts: metrics
   become: true
   tasks:
+    - name: create directory for results
+      file:
+        path: /opt/load_tests
+        state: directory
+        mode: '0755'
     - name: start load tests
       docker_container:
         name: load_tests
         image: automaat/load_tests
+        volumes:
+          - "/opt/load_tests:/opt/gatling/results"
