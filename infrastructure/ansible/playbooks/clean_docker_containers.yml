@@ -1,0 +1,14 @@
+---
+- hosts: magisterka
+  become: true
+  tasks:
+    - name: stop all docker containers
+      shell: docker stop $(docker ps -a -q)
+
+    - name: Prune everything
+      docker_prune:
+        containers: yes
+        images: yes
+        networks: yes
+        volumes: yes
+        builder_cache: yes

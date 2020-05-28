@@ -1,0 +1,8 @@
+---
+- hosts: magisterka
+  become: true
+  tasks:
+    - name: start cpu benchmarking container
+      docker_container:
+        name: cpu-benchmark
+        image: automaat/cpu-benchmark

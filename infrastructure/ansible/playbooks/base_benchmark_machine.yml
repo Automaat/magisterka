@@ -1,0 +1,5 @@
+---
+- hosts: magisterka
+  become: true
+  roles:
+    - docker

@@ -1,0 +1,6 @@
+---
+- hosts: magisterka
+  become: true
+  roles:
+    - docker
+    - ebpf_exporter

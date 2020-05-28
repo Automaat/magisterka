@@ -13,7 +13,7 @@ import scala.language.postfixOps
 class BasicScenario extends Simulation {
 
   val httpProtocol: HttpProtocolBuilder = http
-    .baseUrl("http://localhost:8080") // Here is the root for all relative URLs
+    .baseUrl("http://51.210.97.142:8080") // Here is the root for all relative URLs
     .acceptHeader("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8") // Here are the common headers
     .acceptEncodingHeader("gzip, deflate")
     .acceptLanguageHeader("en-US,en;q=0.5")
@@ -30,7 +30,18 @@ class BasicScenario extends Simulation {
     .exec(
       http("load resource")
         .get("/resource/${resourceId}")
-        .check(status.is(500))
+    )
+    .exec(
+      http("load resource")
+        .get("/resource/${resourceId}")
+    )
+    .exec(
+      http("load resource")
+        .get("/resource/${resourceId}")
+    )
+    .exec(
+      http("load resource")
+        .get("/resource/${resourceId}")
     )
     .pause(10)
     .exec(

@@ -1,0 +1,10 @@
+---
+- hosts: magisterka
+  become: true
+  tasks:
+    - name: start io benchmarking container
+      docker_container:
+        name: io-benchmark
+        image: automaat/io-benchmark
+        ports:
+          - "8080:8080"
