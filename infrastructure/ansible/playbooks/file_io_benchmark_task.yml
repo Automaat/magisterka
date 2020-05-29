@@ -1,0 +1,9 @@
+---
+- hosts: bench_machine
+  become: true
+  tasks:
+    - name: start file io benchmarking container
+      docker_container:
+        name: file_io_benchmark
+        image: automaat/file_io_benchmark
+#        command: "-tu ms -bm sample"
