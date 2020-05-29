@@ -1,0 +1,6 @@
+---
+monitored_host_ip: 51.210.97.142
+monitored_host_port: 9435
+monitored_host_path: '/metrics'
+job_name: 'ebpf-exporter'
+rules_file: 'node_exporter_rules.yml'

@@ -1,0 +1,22 @@
+groups:
+  - name: custom_rules
+    rules:
+      - record: cpu_used
+        expr: rate(node_cpu_seconds_total{mode="system"}[1m])
+      - record: free_memory
+        expr: node_filesystem_avail_bytes{mountpoint="/"}
+      - record: network_usage
+        expr: rate(node_network_receive_bytes_total[1m])
+      - record: disk_io_time
+        expr: rate(node_disk_io_time_seconds_total[1m])
+      - record: waiting_on_scheduler
+        expr: rate(node_schedstat_waiting_seconds_total[1m])
+      - record: exporter_cpu_usage
+        expr: rate(process_cpu_seconds_total[1m])
+      - record: exporter_memory_usage
+        expr: process_resident_memory_bytes
+      - record: exporter_gc_time
+        expr: go_gc_duration_seconds
+
+
+

@@ -3,7 +3,7 @@
   become: true
   roles:
     - role: docker
-    - role: ebpf_prometheus
+    - role: prometheus
       monitored_host_port: 9100
       monitored_host_path: '/metrics'
       job_name: 'node_exporter'

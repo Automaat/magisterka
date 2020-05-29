@@ -1,0 +1,21 @@
+---
+#docker run -d -p 9090:9090 -v $(pwd)/prometheus_conf/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+- name: create prometheus configuration
+  template:
+    src: prometheus.yml.j2
+    dest: "/opt/prometheus.yml"
+    mode: 0644
+- name: copy prometheus rules file
+  copy:
+    src: "{{ rules_file }}"
+    dest: "/opt/rules.yml"
+    mode: 0644
+- name: start prometheus container
+  docker_container:
+    name: prometheus
+    image: prom/prometheus
+    volumes:
+      - "/opt/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "/opt/rules.yml:/etc/prometheus/rules.yml"
+    ports:
+      - "9090:9090"
