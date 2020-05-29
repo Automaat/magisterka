@@ -1,0 +1,6 @@
+---
+- hosts: bench_machine
+  become: true
+  roles:
+    - docker
+    - cloudalchemy.node-exporter
