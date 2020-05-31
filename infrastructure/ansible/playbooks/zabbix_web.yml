@@ -1,0 +1,6 @@
+---
+- hosts: metrics
+  become: true
+  roles:
+    - role: docker
+    - role: zabbix_server_docker

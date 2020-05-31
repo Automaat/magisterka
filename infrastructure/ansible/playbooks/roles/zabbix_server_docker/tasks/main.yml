@@ -1,0 +1,79 @@
+---
+- name: start postgres container
+  docker_container:
+    name: postgres-server
+    image: postgres
+    restart_policy: unless-stopped
+    env:
+      POSTGRES_USER: "zabbix"
+      POSTGRES_DB: "zabbix"
+      POSTGRES_PASSWORD: '{{ postgres_password }}'
+
+- name: start zabbix server container
+  docker_container:
+    name: zabbix-server-pgsql
+    image: zabbix/zabbix-server-pgsql:alpine-4.4.9
+    restart_policy: unless-stopped
+    links:
+      - "postgres-server:postgres-server"
+    ports:
+      - "10051:10051"
+    env:
+      DB_SERVER_HOST: "postgres-server"
+      POSTGRES_USER: "zabbix"
+      POSTGRES_PASSWORD: '{{ postgres_password }}'
+      POSTGRES_DB: "zabbix"
+
+- name: start zabbix web client container
+  docker_container:
+    name: zabbix-web-nginx-pgsql
+    image: zabbix/zabbix-web-nginx-pgsql:alpine-4.4.9
+    restart_policy: unless-stopped
+    links:
+      - "postgres-server:postgres-server"
+      - "zabbix-server-pgsql:zabbix-server"
+    ports:
+      - "8080:8080"
+    env:
+      DB_SERVER_HOST: "postgres-server"
+      POSTGRES_USER: "zabbix"
+      POSTGRES_PASSWORD: '{{ postgres_password }}'
+      POSTGRES_DB: "zabbix"
+
+#docker run --name zabbix-web-nginx-pgsql -t \ ---
+#-e DB_SERVER_HOST="postgres-server" \ ---
+#-e POSTGRES_USER="zabbix" \ ---
+#-e POSTGRES_PASSWORD="zabbix" \ ---
+#-e POSTGRES_DB="zabbix_pwd" \  ---
+#--link postgres-server:postgres \ --
+#--link zabbix-server-pgsql:zabbix-server \ ---
+#-p 443:8443 \ ---
+#-v /etc/ssl/nginx:/etc/ssl/nginx:ro \ ---
+#--restart unless-stopped \ ---
+#-d zabbix/zabbix-web-nginx-pgsql:latest ---
+
+# start database
+
+#docker run --name postgres-server -t \ ---
+#-e POSTGRES_USER="zabbix" \ ---
+#-e POSTGRES_PASSWORD="zabbix" \ ---
+#-e POSTGRES_DB="zabbix_pwd" \ ---
+#--restart unless-stopped \ ---
+#-d postgres:latest ---
+
+# start zabbix server
+
+#docker run --name zabbix-server-pgsql -t \ ---
+#-e DB_SERVER_HOST="postgres-server" \ ---
+#-e POSTGRES_USER="zabbix" \ ---
+#-e POSTGRES_PASSWORD="zabbix" \ ---
+#-e POSTGRES_DB="zabbix_pwd" \ ---
+#-e ZBX_ENABLE_SNMP_TRAPS="true" \ ---
+#--link postgres-server:postgres \ ---
+#-p 10051:10051 \ ---
+#--volumes-from zabbix-snmptraps \ ---
+#--restart unless-stopped \ ---
+#-d zabbix/zabbix-server-pgsql:latest ---
+
+# run zabbix web client
+

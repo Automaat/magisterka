@@ -1,0 +1,11 @@
+galaxy_info:
+  author: Marcin Skalski
+  description: postgres based zabbix-server with zabbix web client
+
+  license: license (GPL-2.0-or-later, MIT, etc)
+
+  min_ansible_version: 2.9
+
+  galaxy_tags: ["zabbix", "docker"]
+
+dependencies: []

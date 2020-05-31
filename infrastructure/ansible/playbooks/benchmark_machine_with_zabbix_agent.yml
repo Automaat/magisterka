@@ -1,0 +1,12 @@
+---
+- hosts: bench_machine
+  become: true
+  roles:
+    - role: docker
+    - role: dj-wasabi.zabbix-agent
+      zabbix_agent_serveractive: 46.105.92.187:10051
+      zabbix_agent_server: 46.105.92.187
+      zabbix_agent_ip: 51.210.97.142
+      zabbix_agent_server_url: http://46.105.92.187:8080
+      zabbix_api_create_hosts: True
+
