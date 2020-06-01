@@ -14,31 +14,33 @@ class BasicScenario extends Simulation {
 
   val httpProtocol: HttpProtocolBuilder = http
     .baseUrl("http://51.210.97.142:8080") // Here is the root for all relative URLs
-    .acceptHeader("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8") // Here are the common headers
-    .acceptEncodingHeader("gzip, deflate")
-    .acceptLanguageHeader("en-US,en;q=0.5")
+    .acceptHeader("application/json") // Here are the common headers
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0")
 
   val scn: ScenarioBuilder = scenario("Simple io benchmark")
     .exec(_.set("resourceId", UUID.randomUUID().toString))
     .exec(
-      http("load resource")
+      http("create resource")
         .post("/resource/${resourceId}")
         .body(StringBody("""{ "value": "some resource" }"""))
+        .header(HttpHeaderNames.ContentType, HttpHeaderValues.ApplicationJson)
     )
     .pause(10)
     .exec(
       http("load resource")
         .get("/resource/${resourceId}")
     )
+    .pause(5)
     .exec(
       http("load resource")
         .get("/resource/${resourceId}")
     )
+    .pause(5)
     .exec(
       http("load resource")
         .get("/resource/${resourceId}")
     )
+    .pause(5)
     .exec(
       http("load resource")
         .get("/resource/${resourceId}")
@@ -49,5 +51,5 @@ class BasicScenario extends Simulation {
         .delete("/resource/${resourceId}")
     )
 
-  setUp(scn.inject(constantUsersPerSec(10) during (15 seconds) randomized).protocols(httpProtocol))
+  setUp(scn.inject(constantUsersPerSec(80) during (1200 seconds)).protocols(httpProtocol))
 }
