@@ -6,4 +6,4 @@
       docker_container:
         name: cpu-benchmark
         image: automaat/cpu-benchmark
-#        command: "-tu us -bm sample"
+        command: "-tu us -bm sample"

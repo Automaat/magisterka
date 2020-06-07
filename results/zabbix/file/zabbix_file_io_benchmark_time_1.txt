@@ -1,0 +1,610 @@
+# JMH version: 1.22
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /opt/java/openjdk/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.automaat.cpu_benchmark.FileIoBenchmark.copyFile
+
+# Run progress: 0.00% complete, ETA 00:11:40
+# Fork: 1 of 10
+# Warmup Iteration   1: 41.234 ±(99.9%) 3.876 ms/op
+# Warmup Iteration   2: 42.171 ±(99.9%) 4.521 ms/op
+Iteration   1: 42.843 ±(99.9%) 4.413 ms/op
+                 copyFile·p0.00:   28.377 ms/op
+                 copyFile·p0.50:   36.700 ms/op
+                 copyFile·p0.90:   54.985 ms/op
+                 copyFile·p0.95:   101.266 ms/op
+                 copyFile·p0.99:   136.540 ms/op
+                 copyFile·p0.999:  140.247 ms/op
+                 copyFile·p0.9999: 140.247 ms/op
+                 copyFile·p1.00:   140.247 ms/op
+
+Iteration   2: 42.004 ±(99.9%) 4.246 ms/op
+                 copyFile·p0.00:   25.592 ms/op
+                 copyFile·p0.50:   35.881 ms/op
+                 copyFile·p0.90:   50.456 ms/op
+                 copyFile·p0.95:   100.008 ms/op
+                 copyFile·p0.99:   130.507 ms/op
+                 copyFile·p0.999:  140.509 ms/op
+                 copyFile·p0.9999: 140.509 ms/op
+                 copyFile·p1.00:   140.509 ms/op
+
+Iteration   3: 41.812 ±(99.9%) 4.395 ms/op
+                 copyFile·p0.00:   26.903 ms/op
+                 copyFile·p0.50:   35.717 ms/op
+                 copyFile·p0.90:   49.414 ms/op
+                 copyFile·p0.95:   107.086 ms/op
+                 copyFile·p0.99:   132.802 ms/op
+                 copyFile·p0.999:  133.693 ms/op
+                 copyFile·p0.9999: 133.693 ms/op
+                 copyFile·p1.00:   133.693 ms/op
+
+Iteration   4: 43.957 ±(99.9%) 4.225 ms/op
+                 copyFile·p0.00:   27.623 ms/op
+                 copyFile·p0.50:   36.504 ms/op
+                 copyFile·p0.90:   63.557 ms/op
+                 copyFile·p0.95:   88.382 ms/op
+                 copyFile·p0.99:   131.181 ms/op
+                 copyFile·p0.999:  135.004 ms/op
+                 copyFile·p0.9999: 135.004 ms/op
+                 copyFile·p1.00:   135.004 ms/op
+
+Iteration   5: 46.631 ±(99.9%) 4.239 ms/op
+                 copyFile·p0.00:   28.803 ms/op
+                 copyFile·p0.50:   39.911 ms/op
+                 copyFile·p0.90:   64.959 ms/op
+                 copyFile·p0.95:   87.320 ms/op
+                 copyFile·p0.99:   130.411 ms/op
+                 copyFile·p0.999:  131.990 ms/op
+                 copyFile·p0.9999: 131.990 ms/op
+                 copyFile·p1.00:   131.990 ms/op
+
+
+# Run progress: 10.00% complete, ETA 00:10:40
+# Fork: 2 of 10
+# Warmup Iteration   1: 44.633 ±(99.9%) 3.759 ms/op
+# Warmup Iteration   2: 44.474 ±(99.9%) 4.208 ms/op
+Iteration   1: 44.994 ±(99.9%) 4.004 ms/op
+                 copyFile·p0.00:   29.688 ms/op
+                 copyFile·p0.50:   38.797 ms/op
+                 copyFile·p0.90:   57.921 ms/op
+                 copyFile·p0.95:   90.178 ms/op
+                 copyFile·p0.99:   119.375 ms/op
+                 copyFile·p0.999:  133.562 ms/op
+                 copyFile·p0.9999: 133.562 ms/op
+                 copyFile·p1.00:   133.562 ms/op
+
+Iteration   2: 43.622 ±(99.9%) 3.744 ms/op
+                 copyFile·p0.00:   28.672 ms/op
+                 copyFile·p0.50:   37.290 ms/op
+                 copyFile·p0.90:   56.990 ms/op
+                 copyFile·p0.95:   78.414 ms/op
+                 copyFile·p0.99:   120.917 ms/op
+                 copyFile·p0.999:  126.484 ms/op
+                 copyFile·p0.9999: 126.484 ms/op
+                 copyFile·p1.00:   126.484 ms/op
+
+Iteration   3: 45.579 ±(99.9%) 3.817 ms/op
+                 copyFile·p0.00:   28.246 ms/op
+                 copyFile·p0.50:   38.928 ms/op
+                 copyFile·p0.90:   63.852 ms/op
+                 copyFile·p0.95:   88.179 ms/op
+                 copyFile·p0.99:   122.293 ms/op
+                 copyFile·p0.999:  133.693 ms/op
+                 copyFile·p0.9999: 133.693 ms/op
+                 copyFile·p1.00:   133.693 ms/op
+
+Iteration   4: 47.767 ±(99.9%) 4.692 ms/op
+                 copyFile·p0.00:   28.410 ms/op
+                 copyFile·p0.50:   40.370 ms/op
+                 copyFile·p0.90:   71.356 ms/op
+                 copyFile·p0.95:   103.245 ms/op
+                 copyFile·p0.99:   136.078 ms/op
+                 copyFile·p0.999:  141.033 ms/op
+                 copyFile·p0.9999: 141.033 ms/op
+                 copyFile·p1.00:   141.033 ms/op
+
+Iteration   5: 45.249 ±(99.9%) 3.362 ms/op
+                 copyFile·p0.00:   28.049 ms/op
+                 copyFile·p0.50:   39.649 ms/op
+                 copyFile·p0.90:   61.630 ms/op
+                 copyFile·p0.95:   68.839 ms/op
+                 copyFile·p0.99:   119.252 ms/op
+                 copyFile·p0.999:  129.499 ms/op
+                 copyFile·p0.9999: 129.499 ms/op
+                 copyFile·p1.00:   129.499 ms/op
+
+
+# Run progress: 20.00% complete, ETA 00:09:28
+# Fork: 3 of 10
+# Warmup Iteration   1: 45.095 ±(99.9%) 4.298 ms/op
+# Warmup Iteration   2: 43.555 ±(99.9%) 4.122 ms/op
+Iteration   1: 42.480 ±(99.9%) 4.205 ms/op
+                 copyFile·p0.00:   28.246 ms/op
+                 copyFile·p0.50:   36.438 ms/op
+                 copyFile·p0.90:   52.907 ms/op
+                 copyFile·p0.95:   96.561 ms/op
+                 copyFile·p0.99:   136.464 ms/op
+                 copyFile·p0.999:  141.296 ms/op
+                 copyFile·p0.9999: 141.296 ms/op
+                 copyFile·p1.00:   141.296 ms/op
+
+Iteration   2: 44.149 ±(99.9%) 3.961 ms/op
+                 copyFile·p0.00:   28.410 ms/op
+                 copyFile·p0.50:   37.782 ms/op
+                 copyFile·p0.90:   62.666 ms/op
+                 copyFile·p0.95:   85.026 ms/op
+                 copyFile·p0.99:   130.105 ms/op
+                 copyFile·p0.999:  133.038 ms/op
+                 copyFile·p0.9999: 133.038 ms/op
+                 copyFile·p1.00:   133.038 ms/op
+
+Iteration   3: 44.552 ±(99.9%) 4.023 ms/op
+                 copyFile·p0.00:   28.803 ms/op
+                 copyFile·p0.50:   37.814 ms/op
+                 copyFile·p0.90:   61.905 ms/op
+                 copyFile·p0.95:   92.943 ms/op
+                 copyFile·p0.99:   125.108 ms/op
+                 copyFile·p0.999:  134.480 ms/op
+                 copyFile·p0.9999: 134.480 ms/op
+                 copyFile·p1.00:   134.480 ms/op
+
+Iteration   4: 44.048 ±(99.9%) 4.138 ms/op
+                 copyFile·p0.00:   28.344 ms/op
+                 copyFile·p0.50:   37.749 ms/op
+                 copyFile·p0.90:   61.971 ms/op
+                 copyFile·p0.95:   92.773 ms/op
+                 copyFile·p0.99:   125.813 ms/op
+                 copyFile·p0.999:  135.004 ms/op
+                 copyFile·p0.9999: 135.004 ms/op
+                 copyFile·p1.00:   135.004 ms/op
+
+Iteration   5: 44.257 ±(99.9%) 4.128 ms/op
+                 copyFile·p0.00:   27.787 ms/op
+                 copyFile·p0.50:   39.125 ms/op
+                 copyFile·p0.90:   60.313 ms/op
+                 copyFile·p0.95:   83.440 ms/op
+                 copyFile·p0.99:   129.338 ms/op
+                 copyFile·p0.999:  139.461 ms/op
+                 copyFile·p0.9999: 139.461 ms/op
+                 copyFile·p1.00:   139.461 ms/op
+
+
+# Run progress: 30.00% complete, ETA 00:08:17
+# Fork: 4 of 10
+# Warmup Iteration   1: 43.761 ±(99.9%) 3.698 ms/op
+# Warmup Iteration   2: 44.193 ±(99.9%) 4.258 ms/op
+Iteration   1: 46.017 ±(99.9%) 4.496 ms/op
+                 copyFile·p0.00:   28.869 ms/op
+                 copyFile·p0.50:   40.403 ms/op
+                 copyFile·p0.90:   61.833 ms/op
+                 copyFile·p0.95:   102.610 ms/op
+                 copyFile·p0.99:   136.732 ms/op
+                 copyFile·p0.999:  141.820 ms/op
+                 copyFile·p0.9999: 141.820 ms/op
+                 copyFile·p1.00:   141.820 ms/op
+
+Iteration   2: 44.510 ±(99.9%) 3.874 ms/op
+                 copyFile·p0.00:   28.869 ms/op
+                 copyFile·p0.50:   39.059 ms/op
+                 copyFile·p0.90:   61.800 ms/op
+                 copyFile·p0.95:   85.367 ms/op
+                 copyFile·p0.99:   123.910 ms/op
+                 copyFile·p0.999:  128.975 ms/op
+                 copyFile·p0.9999: 128.975 ms/op
+                 copyFile·p1.00:   128.975 ms/op
+
+Iteration   3: 44.552 ±(99.9%) 3.980 ms/op
+                 copyFile·p0.00:   28.606 ms/op
+                 copyFile·p0.50:   38.207 ms/op
+                 copyFile·p0.90:   60.791 ms/op
+                 copyFile·p0.95:   88.251 ms/op
+                 copyFile·p0.99:   129.122 ms/op
+                 copyFile·p0.999:  134.480 ms/op
+                 copyFile·p0.9999: 134.480 ms/op
+                 copyFile·p1.00:   134.480 ms/op
+
+Iteration   4: 44.878 ±(99.9%) 4.627 ms/op
+                 copyFile·p0.00:   25.494 ms/op
+                 copyFile·p0.50:   37.814 ms/op
+                 copyFile·p0.90:   61.276 ms/op
+                 copyFile·p0.95:   110.625 ms/op
+                 copyFile·p0.99:   130.438 ms/op
+                 copyFile·p0.999:  132.645 ms/op
+                 copyFile·p0.9999: 132.645 ms/op
+                 copyFile·p1.00:   132.645 ms/op
+
+Iteration   5: 43.545 ±(99.9%) 4.276 ms/op
+                 copyFile·p0.00:   27.918 ms/op
+                 copyFile·p0.50:   36.667 ms/op
+                 copyFile·p0.90:   60.968 ms/op
+                 copyFile·p0.95:   80.360 ms/op
+                 copyFile·p0.99:   132.473 ms/op
+                 copyFile·p0.999:  171.180 ms/op
+                 copyFile·p0.9999: 171.180 ms/op
+                 copyFile·p1.00:   171.180 ms/op
+
+
+# Run progress: 40.00% complete, ETA 00:07:06
+# Fork: 5 of 10
+# Warmup Iteration   1: 43.550 ±(99.9%) 3.735 ms/op
+# Warmup Iteration   2: 40.187 ±(99.9%) 3.900 ms/op
+Iteration   1: 43.563 ±(99.9%) 3.964 ms/op
+                 copyFile·p0.00:   28.246 ms/op
+                 copyFile·p0.50:   39.027 ms/op
+                 copyFile·p0.90:   52.095 ms/op
+                 copyFile·p0.95:   81.048 ms/op
+                 copyFile·p0.99:   132.995 ms/op
+                 copyFile·p0.999:  168.821 ms/op
+                 copyFile·p0.9999: 168.821 ms/op
+                 copyFile·p1.00:   168.821 ms/op
+
+Iteration   2: 43.640 ±(99.9%) 3.715 ms/op
+                 copyFile·p0.00:   27.886 ms/op
+                 copyFile·p0.50:   37.814 ms/op
+                 copyFile·p0.90:   57.868 ms/op
+                 copyFile·p0.95:   73.204 ms/op
+                 copyFile·p0.99:   123.326 ms/op
+                 copyFile·p0.999:  132.776 ms/op
+                 copyFile·p0.9999: 132.776 ms/op
+                 copyFile·p1.00:   132.776 ms/op
+
+Iteration   3: 43.176 ±(99.9%) 4.337 ms/op
+                 copyFile·p0.00:   29.229 ms/op
+                 copyFile·p0.50:   38.404 ms/op
+                 copyFile·p0.90:   50.948 ms/op
+                 copyFile·p0.95:   67.014 ms/op
+                 copyFile·p0.99:   152.991 ms/op
+                 copyFile·p0.999:  171.442 ms/op
+                 copyFile·p0.9999: 171.442 ms/op
+                 copyFile·p1.00:   171.442 ms/op
+
+Iteration   4: 41.683 ±(99.9%) 3.966 ms/op
+                 copyFile·p0.00:   28.639 ms/op
+                 copyFile·p0.50:   36.536 ms/op
+                 copyFile·p0.90:   48.752 ms/op
+                 copyFile·p0.95:   86.530 ms/op
+                 copyFile·p0.99:   132.821 ms/op
+                 copyFile·p0.999:  135.266 ms/op
+                 copyFile·p0.9999: 135.266 ms/op
+                 copyFile·p1.00:   135.266 ms/op
+
+Iteration   5: 40.292 ±(99.9%) 3.825 ms/op
+                 copyFile·p0.00:   26.640 ms/op
+                 copyFile·p0.50:   35.291 ms/op
+                 copyFile·p0.90:   45.901 ms/op
+                 copyFile·p0.95:   61.476 ms/op
+                 copyFile·p0.99:   130.103 ms/op
+                 copyFile·p0.999:  142.344 ms/op
+                 copyFile·p0.9999: 142.344 ms/op
+                 copyFile·p1.00:   142.344 ms/op
+
+
+# Run progress: 50.00% complete, ETA 00:05:55
+# Fork: 6 of 10
+# Warmup Iteration   1: 43.273 ±(99.9%) 4.096 ms/op
+# Warmup Iteration   2: 42.243 ±(99.9%) 3.817 ms/op
+Iteration   1: 41.601 ±(99.9%) 3.659 ms/op
+                 copyFile·p0.00:   27.296 ms/op
+                 copyFile·p0.50:   37.487 ms/op
+                 copyFile·p0.90:   48.025 ms/op
+                 copyFile·p0.95:   60.136 ms/op
+                 copyFile·p0.99:   129.027 ms/op
+                 copyFile·p0.999:  135.528 ms/op
+                 copyFile·p0.9999: 135.528 ms/op
+                 copyFile·p1.00:   135.528 ms/op
+
+Iteration   2: 41.647 ±(99.9%) 3.841 ms/op
+                 copyFile·p0.00:   28.541 ms/op
+                 copyFile·p0.50:   36.405 ms/op
+                 copyFile·p0.90:   52.940 ms/op
+                 copyFile·p0.95:   79.384 ms/op
+                 copyFile·p0.99:   128.867 ms/op
+                 copyFile·p0.999:  134.480 ms/op
+                 copyFile·p0.9999: 134.480 ms/op
+                 copyFile·p1.00:   134.480 ms/op
+
+Iteration   3: 41.982 ±(99.9%) 3.845 ms/op
+                 copyFile·p0.00:   27.951 ms/op
+                 copyFile·p0.50:   37.356 ms/op
+                 copyFile·p0.90:   50.266 ms/op
+                 copyFile·p0.95:   58.655 ms/op
+                 copyFile·p0.99:   138.412 ms/op
+                 copyFile·p0.999:  149.160 ms/op
+                 copyFile·p0.9999: 149.160 ms/op
+                 copyFile·p1.00:   149.160 ms/op
+
+Iteration   4: 42.222 ±(99.9%) 4.093 ms/op
+                 copyFile·p0.00:   27.853 ms/op
+                 copyFile·p0.50:   36.569 ms/op
+                 copyFile·p0.90:   52.075 ms/op
+                 copyFile·p0.95:   65.208 ms/op
+                 copyFile·p0.99:   132.299 ms/op
+                 copyFile·p0.999:  139.985 ms/op
+                 copyFile·p0.9999: 139.985 ms/op
+                 copyFile·p1.00:   139.985 ms/op
+
+Iteration   5: 43.285 ±(99.9%) 5.133 ms/op
+                 copyFile·p0.00:   27.329 ms/op
+                 copyFile·p0.50:   36.831 ms/op
+                 copyFile·p0.90:   52.429 ms/op
+                 copyFile·p0.95:   97.151 ms/op
+                 copyFile·p0.99:   183.113 ms/op
+                 copyFile·p0.999:  212.074 ms/op
+                 copyFile·p0.9999: 212.074 ms/op
+                 copyFile·p1.00:   212.074 ms/op
+
+
+# Run progress: 60.00% complete, ETA 00:04:44
+# Fork: 7 of 10
+# Warmup Iteration   1: 42.264 ±(99.9%) 3.976 ms/op
+# Warmup Iteration   2: 41.482 ±(99.9%) 3.661 ms/op
+Iteration   1: 42.649 ±(99.9%) 3.856 ms/op
+                 copyFile·p0.00:   28.115 ms/op
+                 copyFile·p0.50:   37.290 ms/op
+                 copyFile·p0.90:   53.150 ms/op
+                 copyFile·p0.95:   70.674 ms/op
+                 copyFile·p0.99:   132.073 ms/op
+                 copyFile·p0.999:  135.004 ms/op
+                 copyFile·p0.9999: 135.004 ms/op
+                 copyFile·p1.00:   135.004 ms/op
+
+Iteration   2: 42.296 ±(99.9%) 3.858 ms/op
+                 copyFile·p0.00:   25.362 ms/op
+                 copyFile·p0.50:   36.831 ms/op
+                 copyFile·p0.90:   55.024 ms/op
+                 copyFile·p0.95:   66.886 ms/op
+                 copyFile·p0.99:   132.923 ms/op
+                 copyFile·p0.999:  135.004 ms/op
+                 copyFile·p0.9999: 135.004 ms/op
+                 copyFile·p1.00:   135.004 ms/op
+
+Iteration   3: 41.786 ±(99.9%) 3.669 ms/op
+                 copyFile·p0.00:   26.280 ms/op
+                 copyFile·p0.50:   36.635 ms/op
+                 copyFile·p0.90:   51.328 ms/op
+                 copyFile·p0.95:   76.408 ms/op
+                 copyFile·p0.99:   134.576 ms/op
+                 copyFile·p0.999:  141.296 ms/op
+                 copyFile·p0.9999: 141.296 ms/op
+                 copyFile·p1.00:   141.296 ms/op
+
+Iteration   4: 42.854 ±(99.9%) 3.606 ms/op
+                 copyFile·p0.00:   28.541 ms/op
+                 copyFile·p0.50:   38.699 ms/op
+                 copyFile·p0.90:   52.363 ms/op
+                 copyFile·p0.95:   73.433 ms/op
+                 copyFile·p0.99:   119.125 ms/op
+                 copyFile·p0.999:  127.140 ms/op
+                 copyFile·p0.9999: 127.140 ms/op
+                 copyFile·p1.00:   127.140 ms/op
+
+Iteration   5: 41.707 ±(99.9%) 3.919 ms/op
+                 copyFile·p0.00:   26.837 ms/op
+                 copyFile·p0.50:   36.274 ms/op
+                 copyFile·p0.90:   49.244 ms/op
+                 copyFile·p0.95:   65.159 ms/op
+                 copyFile·p0.99:   133.486 ms/op
+                 copyFile·p0.999:  139.198 ms/op
+                 copyFile·p0.9999: 139.198 ms/op
+                 copyFile·p1.00:   139.198 ms/op
+
+
+# Run progress: 70.00% complete, ETA 00:03:33
+# Fork: 8 of 10
+# Warmup Iteration   1: 41.540 ±(99.9%) 3.743 ms/op
+# Warmup Iteration   2: 42.646 ±(99.9%) 3.997 ms/op
+Iteration   1: 42.732 ±(99.9%) 3.630 ms/op
+                 copyFile·p0.00:   28.541 ms/op
+                 copyFile·p0.50:   37.519 ms/op
+                 copyFile·p0.90:   56.754 ms/op
+                 copyFile·p0.95:   66.519 ms/op
+                 copyFile·p0.99:   127.042 ms/op
+                 copyFile·p0.999:  127.402 ms/op
+                 copyFile·p0.9999: 127.402 ms/op
+                 copyFile·p1.00:   127.402 ms/op
+
+Iteration   2: 43.936 ±(99.9%) 4.036 ms/op
+                 copyFile·p0.00:   24.576 ms/op
+                 copyFile·p0.50:   37.716 ms/op
+                 copyFile·p0.90:   60.686 ms/op
+                 copyFile·p0.95:   69.553 ms/op
+                 copyFile·p0.99:   134.700 ms/op
+                 copyFile·p0.999:  135.266 ms/op
+                 copyFile·p0.9999: 135.266 ms/op
+                 copyFile·p1.00:   135.266 ms/op
+
+Iteration   3: 47.101 ±(99.9%) 4.436 ms/op
+                 copyFile·p0.00:   28.213 ms/op
+                 copyFile·p0.50:   39.059 ms/op
+                 copyFile·p0.90:   67.004 ms/op
+                 copyFile·p0.95:   82.785 ms/op
+                 copyFile·p0.99:   130.063 ms/op
+                 copyFile·p0.999:  139.985 ms/op
+                 copyFile·p0.9999: 139.985 ms/op
+                 copyFile·p1.00:   139.985 ms/op
+
+Iteration   4: 44.016 ±(99.9%) 3.368 ms/op
+                 copyFile·p0.00:   28.738 ms/op
+                 copyFile·p0.50:   39.125 ms/op
+                 copyFile·p0.90:   59.861 ms/op
+                 copyFile·p0.95:   71.696 ms/op
+                 copyFile·p0.99:   112.858 ms/op
+                 copyFile·p0.999:  127.009 ms/op
+                 copyFile·p0.9999: 127.009 ms/op
+                 copyFile·p1.00:   127.009 ms/op
+
+Iteration   5: 44.138 ±(99.9%) 3.772 ms/op
+                 copyFile·p0.00:   28.377 ms/op
+                 copyFile·p0.50:   38.076 ms/op
+                 copyFile·p0.90:   59.507 ms/op
+                 copyFile·p0.95:   70.359 ms/op
+                 copyFile·p0.99:   126.212 ms/op
+                 copyFile·p0.999:  134.480 ms/op
+                 copyFile·p0.9999: 134.480 ms/op
+                 copyFile·p1.00:   134.480 ms/op
+
+
+# Run progress: 80.00% complete, ETA 00:02:22
+# Fork: 9 of 10
+# Warmup Iteration   1: 41.487 ±(99.9%) 3.830 ms/op
+# Warmup Iteration   2: 43.975 ±(99.9%) 3.801 ms/op
+Iteration   1: 44.221 ±(99.9%) 4.058 ms/op
+                 copyFile·p0.00:   28.115 ms/op
+                 copyFile·p0.50:   38.601 ms/op
+                 copyFile·p0.90:   61.682 ms/op
+                 copyFile·p0.95:   74.265 ms/op
+                 copyFile·p0.99:   132.168 ms/op
+                 copyFile·p0.999:  133.825 ms/op
+                 copyFile·p0.9999: 133.825 ms/op
+                 copyFile·p1.00:   133.825 ms/op
+
+Iteration   2: 43.734 ±(99.9%) 3.371 ms/op
+                 copyFile·p0.00:   29.393 ms/op
+                 copyFile·p0.50:   38.797 ms/op
+                 copyFile·p0.90:   59.834 ms/op
+                 copyFile·p0.95:   72.155 ms/op
+                 copyFile·p0.99:   119.249 ms/op
+                 copyFile·p0.999:  129.892 ms/op
+                 copyFile·p0.9999: 129.892 ms/op
+                 copyFile·p1.00:   129.892 ms/op
+
+Iteration   3: 43.465 ±(99.9%) 3.768 ms/op
+                 copyFile·p0.00:   28.770 ms/op
+                 copyFile·p0.50:   38.011 ms/op
+                 copyFile·p0.90:   55.679 ms/op
+                 copyFile·p0.95:   70.012 ms/op
+                 copyFile·p0.99:   128.217 ms/op
+                 copyFile·p0.999:  136.577 ms/op
+                 copyFile·p0.9999: 136.577 ms/op
+                 copyFile·p1.00:   136.577 ms/op
+
+Iteration   4: 43.040 ±(99.9%) 3.954 ms/op
+                 copyFile·p0.00:   28.475 ms/op
+                 copyFile·p0.50:   37.093 ms/op
+                 copyFile·p0.90:   56.086 ms/op
+                 copyFile·p0.95:   76.848 ms/op
+                 copyFile·p0.99:   135.809 ms/op
+                 copyFile·p0.999:  143.393 ms/op
+                 copyFile·p0.9999: 143.393 ms/op
+                 copyFile·p1.00:   143.393 ms/op
+
+Iteration   5: 43.725 ±(99.9%) 4.038 ms/op
+                 copyFile·p0.00:   27.558 ms/op
+                 copyFile·p0.50:   38.404 ms/op
+                 copyFile·p0.90:   56.885 ms/op
+                 copyFile·p0.95:   70.648 ms/op
+                 copyFile·p0.99:   133.195 ms/op
+                 copyFile·p0.999:  134.218 ms/op
+                 copyFile·p0.9999: 134.218 ms/op
+                 copyFile·p1.00:   134.218 ms/op
+
+
+# Run progress: 90.00% complete, ETA 00:01:11
+# Fork: 10 of 10
+# Warmup Iteration   1: 44.257 ±(99.9%) 3.725 ms/op
+# Warmup Iteration   2: 44.729 ±(99.9%) 3.676 ms/op
+Iteration   1: 44.503 ±(99.9%) 3.728 ms/op
+                 copyFile·p0.00:   26.903 ms/op
+                 copyFile·p0.50:   39.715 ms/op
+                 copyFile·p0.90:   60.765 ms/op
+                 copyFile·p0.95:   84.240 ms/op
+                 copyFile·p0.99:   121.485 ms/op
+                 copyFile·p0.999:  126.222 ms/op
+                 copyFile·p0.9999: 126.222 ms/op
+                 copyFile·p1.00:   126.222 ms/op
+
+Iteration   2: 44.827 ±(99.9%) 3.979 ms/op
+                 copyFile·p0.00:   28.639 ms/op
+                 copyFile·p0.50:   38.142 ms/op
+                 copyFile·p0.90:   60.201 ms/op
+                 copyFile·p0.95:   79.167 ms/op
+                 copyFile·p0.99:   122.898 ms/op
+                 copyFile·p0.999:  124.649 ms/op
+                 copyFile·p0.9999: 124.649 ms/op
+                 copyFile·p1.00:   124.649 ms/op
+
+Iteration   3: 43.168 ±(99.9%) 3.494 ms/op
+                 copyFile·p0.00:   29.688 ms/op
+                 copyFile·p0.50:   38.240 ms/op
+                 copyFile·p0.90:   58.884 ms/op
+                 copyFile·p0.95:   65.988 ms/op
+                 copyFile·p0.99:   128.852 ms/op
+                 copyFile·p0.999:  130.810 ms/op
+                 copyFile·p0.9999: 130.810 ms/op
+                 copyFile·p1.00:   130.810 ms/op
+
+Iteration   4: 44.106 ±(99.9%) 3.959 ms/op
+                 copyFile·p0.00:   27.951 ms/op
+                 copyFile·p0.50:   37.159 ms/op
+                 copyFile·p0.90:   60.883 ms/op
+                 copyFile·p0.95:   70.831 ms/op
+                 copyFile·p0.99:   135.230 ms/op
+                 copyFile·p0.999:  139.985 ms/op
+                 copyFile·p0.9999: 139.985 ms/op
+                 copyFile·p1.00:   139.985 ms/op
+
+Iteration   5: 43.222 ±(99.9%) 3.952 ms/op
+                 copyFile·p0.00:   26.575 ms/op
+                 copyFile·p0.50:   37.192 ms/op
+                 copyFile·p0.90:   59.802 ms/op
+                 copyFile·p0.95:   72.804 ms/op
+                 copyFile·p0.99:   138.420 ms/op
+                 copyFile·p0.999:  142.606 ms/op
+                 copyFile·p0.9999: 142.606 ms/op
+                 copyFile·p1.00:   142.606 ms/op
+
+
+
+Result "com.automaat.cpu_benchmark.FileIoBenchmark.copyFile":
+  N = 11495
+  mean =     43.587 ±(99.9%) 0.560 ms/op
+
+  Histogram, ms/op:
+    [  0.000,  25.000) = 1 
+    [ 25.000,  50.000) = 9616 
+    [ 50.000,  75.000) = 1287 
+    [ 75.000, 100.000) = 166 
+    [100.000, 125.000) = 276 
+    [125.000, 150.000) = 143 
+    [150.000, 175.000) = 4 
+    [175.000, 200.000) = 0 
+    [200.000, 225.000) = 2 
+    [225.000, 250.000) = 0 
+    [250.000, 275.000) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =     24.576 ms/op
+     p(50.0000) =     37.683 ms/op
+     p(90.0000) =     57.803 ms/op
+     p(95.0000) =     76.861 ms/op
+     p(99.0000) =    128.057 ms/op
+     p(99.9000) =    142.084 ms/op
+     p(99.9900) =    211.055 ms/op
+     p(99.9990) =    212.074 ms/op
+     p(99.9999) =    212.074 ms/op
+    p(100.0000) =    212.074 ms/op
+
+
+# Run complete. Total time: 00:11:50
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                    Mode    Cnt    Score   Error  Units
+FileIoBenchmark.copyFile                   sample  11495   43.587 ± 0.560  ms/op
+FileIoBenchmark.copyFile:copyFile·p0.00    sample          24.576          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.50    sample          37.683          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.90    sample          57.803          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.95    sample          76.861          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.99    sample         128.057          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.999   sample         142.084          ms/op
+FileIoBenchmark.copyFile:copyFile·p0.9999  sample         211.055          ms/op
+FileIoBenchmark.copyFile:copyFile·p1.00    sample         212.074          ms/op

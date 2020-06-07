@@ -1,0 +1,10 @@
+{
+  "simulation": "benchamark_load_tests.BasicScenario",
+  "simulationId": "basicscenario",
+  "start": 1591026846363,
+  "description": "simple run",
+  "scenarios": ["Simple io benchmark"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,128 @@
+# JMH version: 1.22
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /opt/java/openjdk/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.automaat.cpu_benchmark.FileIoBenchmark.copyFile
+
+# Run progress: 0.00% complete, ETA 00:11:40
+# Fork: 1 of 10
+# Warmup Iteration   1: 112.634 ops/s
+# Warmup Iteration   2: 110.894 ops/s
+Iteration   1: 108.259 ops/s
+Iteration   2: 111.423 ops/s
+Iteration   3: 107.507 ops/s
+Iteration   4: 110.648 ops/s
+Iteration   5: 106.706 ops/s
+
+# Run progress: 10.00% complete, ETA 00:10:39
+# Fork: 2 of 10
+# Warmup Iteration   1: 101.256 ops/s
+# Warmup Iteration   2: 103.083 ops/s
+Iteration   1: 106.163 ops/s
+Iteration   2: 106.451 ops/s
+Iteration   3: 108.685 ops/s
+Iteration   4: 108.790 ops/s
+Iteration   5: 107.251 ops/s
+
+# Run progress: 20.00% complete, ETA 00:09:27
+# Fork: 3 of 10
+# Warmup Iteration   1: 103.959 ops/s
+# Warmup Iteration   2: 107.858 ops/s
+Iteration   1: 109.945 ops/s
+Iteration   2: 108.957 ops/s
+Iteration   3: 107.304 ops/s
+Iteration   4: 106.174 ops/s
+Iteration   5: 108.865 ops/s
+
+# Run progress: 30.00% complete, ETA 00:08:16
+# Fork: 4 of 10
+# Warmup Iteration   1: 107.087 ops/s
+# Warmup Iteration   2: 106.253 ops/s
+Iteration   1: 107.279 ops/s
+Iteration   2: 106.571 ops/s
+Iteration   3: 109.317 ops/s
+Iteration   4: 108.029 ops/s
+Iteration   5: 108.090 ops/s
+
+# Run progress: 40.00% complete, ETA 00:07:05
+# Fork: 5 of 10
+# Warmup Iteration   1: 108.866 ops/s
+# Warmup Iteration   2: 111.893 ops/s
+Iteration   1: 113.095 ops/s
+Iteration   2: 108.937 ops/s
+Iteration   3: 111.848 ops/s
+Iteration   4: 107.887 ops/s
+Iteration   5: 104.858 ops/s
+
+# Run progress: 50.00% complete, ETA 00:05:54
+# Fork: 6 of 10
+# Warmup Iteration   1: 110.811 ops/s
+# Warmup Iteration   2: 107.303 ops/s
+Iteration   1: 107.374 ops/s
+Iteration   2: 108.267 ops/s
+Iteration   3: 107.961 ops/s
+Iteration   4: 110.174 ops/s
+Iteration   5: 103.253 ops/s
+
+# Run progress: 60.00% complete, ETA 00:04:43
+# Fork: 7 of 10
+# Warmup Iteration   1: 106.945 ops/s
+# Warmup Iteration   2: 109.839 ops/s
+Iteration   1: 111.684 ops/s
+Iteration   2: 108.307 ops/s
+Iteration   3: 106.350 ops/s
+Iteration   4: 112.831 ops/s
+Iteration   5: 108.457 ops/s
+
+# Run progress: 70.00% complete, ETA 00:03:32
+# Fork: 8 of 10
+# Warmup Iteration   1: 109.485 ops/s
+# Warmup Iteration   2: 110.177 ops/s
+Iteration   1: 110.368 ops/s
+Iteration   2: 106.839 ops/s
+Iteration   3: 109.232 ops/s
+Iteration   4: 113.387 ops/s
+Iteration   5: 108.925 ops/s
+
+# Run progress: 80.00% complete, ETA 00:02:21
+# Fork: 9 of 10
+# Warmup Iteration   1: 101.957 ops/s
+# Warmup Iteration   2: 104.775 ops/s
+Iteration   1: 108.838 ops/s
+Iteration   2: 113.587 ops/s
+Iteration   3: 107.449 ops/s
+Iteration   4: 113.943 ops/s
+Iteration   5: 113.939 ops/s
+
+# Run progress: 90.00% complete, ETA 00:01:10
+# Fork: 10 of 10
+# Warmup Iteration   1: 108.954 ops/s
+# Warmup Iteration   2: 108.237 ops/s
+Iteration   1: 111.260 ops/s
+Iteration   2: 109.498 ops/s
+Iteration   3: 107.278 ops/s
+Iteration   4: 110.079 ops/s
+Iteration   5: 107.559 ops/s
+
+
+Result "com.automaat.cpu_benchmark.FileIoBenchmark.copyFile":
+  108.918 ±(99.9%) 1.179 ops/s [Average]
+  (min, avg, max) = (103.253, 108.918, 113.943), stdev = 2.381
+  CI (99.9%): [107.739, 110.096] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:11:48
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                  Mode  Cnt    Score   Error  Units
+FileIoBenchmark.copyFile  thrpt   50  108.918 ± 1.179  ops/s

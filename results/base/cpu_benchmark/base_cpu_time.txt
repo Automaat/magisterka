@@ -1,0 +1,614 @@
+# JMH version: 1.22
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /opt/java/openjdk/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.automaat.cpu_benchmark.FactorialBenchmark.calculateFactorial
+
+# Run progress: 0.00% complete, ETA 00:11:40
+# Fork: 1 of 10
+# Warmup Iteration   1: 888.925 ±(99.9%) 15.596 us/op
+# Warmup Iteration   2: 786.252 ±(99.9%) 14.130 us/op
+Iteration   1: 899.916 ±(99.9%) 19.988 us/op
+                 calculateFactorial·p0.00:   492.544 us/op
+                 calculateFactorial·p0.50:   754.688 us/op
+                 calculateFactorial·p0.90:   1058.816 us/op
+                 calculateFactorial·p0.95:   1273.856 us/op
+                 calculateFactorial·p0.99:   4800.512 us/op
+                 calculateFactorial·p0.999:  6442.967 us/op
+                 calculateFactorial·p0.9999: 13005.572 us/op
+                 calculateFactorial·p1.00:   13238.272 us/op
+
+Iteration   2: 853.993 ±(99.9%) 10.870 us/op
+                 calculateFactorial·p0.00:   519.680 us/op
+                 calculateFactorial·p0.50:   755.200 us/op
+                 calculateFactorial·p0.90:   1069.056 us/op
+                 calculateFactorial·p0.95:   1269.760 us/op
+                 calculateFactorial·p0.99:   2277.171 us/op
+                 calculateFactorial·p0.999:  4725.965 us/op
+                 calculateFactorial·p0.9999: 10895.671 us/op
+                 calculateFactorial·p1.00:   11124.736 us/op
+
+Iteration   3: 813.762 ±(99.9%) 11.617 us/op
+                 calculateFactorial·p0.00:   480.768 us/op
+                 calculateFactorial·p0.50:   739.328 us/op
+                 calculateFactorial·p0.90:   1028.096 us/op
+                 calculateFactorial·p0.95:   1128.448 us/op
+                 calculateFactorial·p0.99:   1819.750 us/op
+                 calculateFactorial·p0.999:  5549.998 us/op
+                 calculateFactorial·p0.9999: 14626.701 us/op
+                 calculateFactorial·p1.00:   15417.344 us/op
+
+Iteration   4: 769.303 ±(99.9%) 14.053 us/op
+                 calculateFactorial·p0.00:   479.744 us/op
+                 calculateFactorial·p0.50:   700.416 us/op
+                 calculateFactorial·p0.90:   957.440 us/op
+                 calculateFactorial·p0.95:   1030.144 us/op
+                 calculateFactorial·p0.99:   1447.916 us/op
+                 calculateFactorial·p0.999:  9469.837 us/op
+                 calculateFactorial·p0.9999: 11016.598 us/op
+                 calculateFactorial·p1.00:   11026.432 us/op
+
+Iteration   5: 722.810 ±(99.9%) 6.293 us/op
+                 calculateFactorial·p0.00:   483.328 us/op
+                 calculateFactorial·p0.50:   681.984 us/op
+                 calculateFactorial·p0.90:   916.480 us/op
+                 calculateFactorial·p0.95:   993.280 us/op
+                 calculateFactorial·p0.99:   1222.226 us/op
+                 calculateFactorial·p0.999:  2706.538 us/op
+                 calculateFactorial·p0.9999: 10968.510 us/op
+                 calculateFactorial·p1.00:   11550.720 us/op
+
+
+# Run progress: 10.00% complete, ETA 00:10:39
+# Fork: 2 of 10
+# Warmup Iteration   1: 770.976 ±(99.9%) 9.659 us/op
+# Warmup Iteration   2: 777.350 ±(99.9%) 6.995 us/op
+Iteration   1: 757.710 ±(99.9%) 6.337 us/op
+                 calculateFactorial·p0.00:   486.400 us/op
+                 calculateFactorial·p0.50:   712.704 us/op
+                 calculateFactorial·p0.90:   974.848 us/op
+                 calculateFactorial·p0.95:   1040.384 us/op
+                 calculateFactorial·p0.99:   1335.296 us/op
+                 calculateFactorial·p0.999:  3228.500 us/op
+                 calculateFactorial·p0.9999: 8416.070 us/op
+                 calculateFactorial·p1.00:   9502.720 us/op
+
+Iteration   2: 801.363 ±(99.9%) 9.649 us/op
+                 calculateFactorial·p0.00:   493.056 us/op
+                 calculateFactorial·p0.50:   740.352 us/op
+                 calculateFactorial·p0.90:   1012.736 us/op
+                 calculateFactorial·p0.95:   1093.632 us/op
+                 calculateFactorial·p0.99:   1417.216 us/op
+                 calculateFactorial·p0.999:  6166.618 us/op
+                 calculateFactorial·p0.9999: 9053.015 us/op
+                 calculateFactorial·p1.00:   9125.888 us/op
+
+Iteration   3: 872.043 ±(99.9%) 11.288 us/op
+                 calculateFactorial·p0.00:   517.120 us/op
+                 calculateFactorial·p0.50:   772.096 us/op
+                 calculateFactorial·p0.90:   1097.728 us/op
+                 calculateFactorial·p0.95:   1325.056 us/op
+                 calculateFactorial·p0.99:   2320.753 us/op
+                 calculateFactorial·p0.999:  4284.670 us/op
+                 calculateFactorial·p0.9999: 12719.641 us/op
+                 calculateFactorial·p1.00:   12877.824 us/op
+
+Iteration   4: 814.042 ±(99.9%) 13.764 us/op
+                 calculateFactorial·p0.00:   497.152 us/op
+                 calculateFactorial·p0.50:   732.160 us/op
+                 calculateFactorial·p0.90:   992.256 us/op
+                 calculateFactorial·p0.95:   1076.122 us/op
+                 calculateFactorial·p0.99:   2030.121 us/op
+                 calculateFactorial·p0.999:  7883.178 us/op
+                 calculateFactorial·p0.9999: 14148.677 us/op
+                 calculateFactorial·p1.00:   14385.152 us/op
+
+Iteration   5: 752.764 ±(99.9%) 5.787 us/op
+                 calculateFactorial·p0.00:   480.768 us/op
+                 calculateFactorial·p0.50:   708.608 us/op
+                 calculateFactorial·p0.90:   969.728 us/op
+                 calculateFactorial·p0.95:   1038.336 us/op
+                 calculateFactorial·p0.99:   1315.389 us/op
+                 calculateFactorial·p0.999:  2888.860 us/op
+                 calculateFactorial·p0.9999: 6639.924 us/op
+                 calculateFactorial·p1.00:   7020.544 us/op
+
+
+# Run progress: 20.00% complete, ETA 00:09:27
+# Fork: 3 of 10
+# Warmup Iteration   1: 745.529 ±(99.9%) 9.776 us/op
+# Warmup Iteration   2: 748.564 ±(99.9%) 6.703 us/op
+Iteration   1: 759.523 ±(99.9%) 6.285 us/op
+                 calculateFactorial·p0.00:   472.576 us/op
+                 calculateFactorial·p0.50:   714.752 us/op
+                 calculateFactorial·p0.90:   978.944 us/op
+                 calculateFactorial·p0.95:   1054.720 us/op
+                 calculateFactorial·p0.99:   1314.570 us/op
+                 calculateFactorial·p0.999:  3711.042 us/op
+                 calculateFactorial·p0.9999: 7189.096 us/op
+                 calculateFactorial·p1.00:   7856.128 us/op
+
+Iteration   2: 783.587 ±(99.9%) 7.458 us/op
+                 calculateFactorial·p0.00:   467.968 us/op
+                 calculateFactorial·p0.50:   734.208 us/op
+                 calculateFactorial·p0.90:   993.280 us/op
+                 calculateFactorial·p0.95:   1069.056 us/op
+                 calculateFactorial·p0.99:   1326.080 us/op
+                 calculateFactorial·p0.999:  3630.080 us/op
+                 calculateFactorial·p0.9999: 10672.128 us/op
+                 calculateFactorial·p1.00:   10829.824 us/op
+
+Iteration   3: 808.926 ±(99.9%) 7.271 us/op
+                 calculateFactorial·p0.00:   477.184 us/op
+                 calculateFactorial·p0.50:   751.616 us/op
+                 calculateFactorial·p0.90:   1044.480 us/op
+                 calculateFactorial·p0.95:   1136.640 us/op
+                 calculateFactorial·p0.99:   1478.656 us/op
+                 calculateFactorial·p0.999:  3223.323 us/op
+                 calculateFactorial·p0.9999: 8212.546 us/op
+                 calculateFactorial·p1.00:   8863.744 us/op
+
+Iteration   4: 755.114 ±(99.9%) 10.554 us/op
+                 calculateFactorial·p0.00:   471.552 us/op
+                 calculateFactorial·p0.50:   702.464 us/op
+                 calculateFactorial·p0.90:   950.272 us/op
+                 calculateFactorial·p0.95:   1015.245 us/op
+                 calculateFactorial·p0.99:   1312.133 us/op
+                 calculateFactorial·p0.999:  6898.287 us/op
+                 calculateFactorial·p0.9999: 10063.536 us/op
+                 calculateFactorial·p1.00:   10354.688 us/op
+
+Iteration   5: 740.666 ±(99.9%) 5.099 us/op
+                 calculateFactorial·p0.00:   480.256 us/op
+                 calculateFactorial·p0.50:   703.488 us/op
+                 calculateFactorial·p0.90:   960.512 us/op
+                 calculateFactorial·p0.95:   1020.928 us/op
+                 calculateFactorial·p0.99:   1241.334 us/op
+                 calculateFactorial·p0.999:  2003.091 us/op
+                 calculateFactorial·p0.9999: 6840.635 us/op
+                 calculateFactorial·p1.00:   8003.584 us/op
+
+
+# Run progress: 30.00% complete, ETA 00:08:16
+# Fork: 4 of 10
+# Warmup Iteration   1: 853.437 ±(99.9%) 11.168 us/op
+# Warmup Iteration   2: 783.631 ±(99.9%) 5.004 us/op
+Iteration   1: 794.173 ±(99.9%) 6.247 us/op
+                 calculateFactorial·p0.00:   480.768 us/op
+                 calculateFactorial·p0.50:   741.376 us/op
+                 calculateFactorial·p0.90:   1011.712 us/op
+                 calculateFactorial·p0.95:   1079.296 us/op
+                 calculateFactorial·p0.99:   1331.200 us/op
+                 calculateFactorial·p0.999:  3287.122 us/op
+                 calculateFactorial·p0.9999: 7872.504 us/op
+                 calculateFactorial·p1.00:   8699.904 us/op
+
+Iteration   2: 881.537 ±(99.9%) 10.116 us/op
+                 calculateFactorial·p0.00:   531.456 us/op
+                 calculateFactorial·p0.50:   782.336 us/op
+                 calculateFactorial·p0.90:   1091.584 us/op
+                 calculateFactorial·p0.95:   1318.912 us/op
+                 calculateFactorial·p0.99:   2398.372 us/op
+                 calculateFactorial·p0.999:  3934.683 us/op
+                 calculateFactorial·p0.9999: 11491.126 us/op
+                 calculateFactorial·p1.00:   12484.608 us/op
+
+Iteration   3: 878.745 ±(99.9%) 13.056 us/op
+                 calculateFactorial·p0.00:   512.512 us/op
+                 calculateFactorial·p0.50:   773.120 us/op
+                 calculateFactorial·p0.90:   1081.344 us/op
+                 calculateFactorial·p0.95:   1261.568 us/op
+                 calculateFactorial·p0.99:   2727.936 us/op
+                 calculateFactorial·p0.999:  5659.656 us/op
+                 calculateFactorial·p0.9999: 11084.297 us/op
+                 calculateFactorial·p1.00:   11157.504 us/op
+
+Iteration   4: 838.109 ±(99.9%) 12.310 us/op
+                 calculateFactorial·p0.00:   512.512 us/op
+                 calculateFactorial·p0.50:   757.760 us/op
+                 calculateFactorial·p0.90:   1037.312 us/op
+                 calculateFactorial·p0.95:   1118.208 us/op
+                 calculateFactorial·p0.99:   1592.320 us/op
+                 calculateFactorial·p0.999:  7039.590 us/op
+                 calculateFactorial·p0.9999: 12943.483 us/op
+                 calculateFactorial·p1.00:   13451.264 us/op
+
+Iteration   5: 835.614 ±(99.9%) 7.472 us/op
+                 calculateFactorial·p0.00:   541.696 us/op
+                 calculateFactorial·p0.50:   762.880 us/op
+                 calculateFactorial·p0.90:   1042.432 us/op
+                 calculateFactorial·p0.95:   1112.064 us/op
+                 calculateFactorial·p0.99:   1409.024 us/op
+                 calculateFactorial·p0.999:  3871.261 us/op
+                 calculateFactorial·p0.9999: 7134.190 us/op
+                 calculateFactorial·p1.00:   7233.536 us/op
+
+
+# Run progress: 40.00% complete, ETA 00:07:05
+# Fork: 5 of 10
+# Warmup Iteration   1: 785.621 ±(99.9%) 12.412 us/op
+# Warmup Iteration   2: 812.087 ±(99.9%) 6.575 us/op
+Iteration   1: 836.036 ±(99.9%) 7.099 us/op
+                 calculateFactorial·p0.00:   557.056 us/op
+                 calculateFactorial·p0.50:   765.952 us/op
+                 calculateFactorial·p0.90:   1041.408 us/op
+                 calculateFactorial·p0.95:   1126.400 us/op
+                 calculateFactorial·p0.99:   1466.778 us/op
+                 calculateFactorial·p0.999:  3313.254 us/op
+                 calculateFactorial·p0.9999: 7008.109 us/op
+                 calculateFactorial·p1.00:   7241.728 us/op
+
+Iteration   2: 861.083 ±(99.9%) 9.037 us/op
+                 calculateFactorial·p0.00:   505.344 us/op
+                 calculateFactorial·p0.50:   772.096 us/op
+                 calculateFactorial·p0.90:   1081.344 us/op
+                 calculateFactorial·p0.95:   1292.288 us/op
+                 calculateFactorial·p0.99:   2191.114 us/op
+                 calculateFactorial·p0.999:  3677.209 us/op
+                 calculateFactorial·p0.9999: 7254.442 us/op
+                 calculateFactorial·p1.00:   7569.408 us/op
+
+Iteration   3: 779.665 ±(99.9%) 7.332 us/op
+                 calculateFactorial·p0.00:   485.376 us/op
+                 calculateFactorial·p0.50:   730.112 us/op
+                 calculateFactorial·p0.90:   983.040 us/op
+                 calculateFactorial·p0.95:   1058.816 us/op
+                 calculateFactorial·p0.99:   1404.928 us/op
+                 calculateFactorial·p0.999:  3410.362 us/op
+                 calculateFactorial·p0.9999: 8359.589 us/op
+                 calculateFactorial·p1.00:   8765.440 us/op
+
+Iteration   4: 872.607 ±(99.9%) 10.373 us/op
+                 calculateFactorial·p0.00:   573.440 us/op
+                 calculateFactorial·p0.50:   782.336 us/op
+                 calculateFactorial·p0.90:   1071.104 us/op
+                 calculateFactorial·p0.95:   1167.360 us/op
+                 calculateFactorial·p0.99:   1742.602 us/op
+                 calculateFactorial·p0.999:  6423.249 us/op
+                 calculateFactorial·p0.9999: 7843.886 us/op
+                 calculateFactorial·p1.00:   7872.512 us/op
+
+Iteration   5: 827.614 ±(99.9%) 6.148 us/op
+                 calculateFactorial·p0.00:   545.792 us/op
+                 calculateFactorial·p0.50:   766.976 us/op
+                 calculateFactorial·p0.90:   1041.408 us/op
+                 calculateFactorial·p0.95:   1093.632 us/op
+                 calculateFactorial·p0.99:   1290.834 us/op
+                 calculateFactorial·p0.999:  2271.244 us/op
+                 calculateFactorial·p0.9999: 8778.431 us/op
+                 calculateFactorial·p1.00:   8781.824 us/op
+
+
+# Run progress: 50.00% complete, ETA 00:05:54
+# Fork: 6 of 10
+# Warmup Iteration   1: 855.546 ±(99.9%) 11.450 us/op
+# Warmup Iteration   2: 846.614 ±(99.9%) 6.681 us/op
+Iteration   1: 830.472 ±(99.9%) 5.837 us/op
+                 calculateFactorial·p0.00:   548.864 us/op
+                 calculateFactorial·p0.50:   765.952 us/op
+                 calculateFactorial·p0.90:   1044.480 us/op
+                 calculateFactorial·p0.95:   1110.016 us/op
+                 calculateFactorial·p0.99:   1405.870 us/op
+                 calculateFactorial·p0.999:  2813.215 us/op
+                 calculateFactorial·p0.9999: 4633.292 us/op
+                 calculateFactorial·p1.00:   4644.864 us/op
+
+Iteration   2: 846.371 ±(99.9%) 6.273 us/op
+                 calculateFactorial·p0.00:   549.888 us/op
+                 calculateFactorial·p0.50:   783.360 us/op
+                 calculateFactorial·p0.90:   1064.960 us/op
+                 calculateFactorial·p0.95:   1130.496 us/op
+                 calculateFactorial·p0.99:   1363.825 us/op
+                 calculateFactorial·p0.999:  2320.720 us/op
+                 calculateFactorial·p0.9999: 6643.542 us/op
+                 calculateFactorial·p1.00:   6856.704 us/op
+
+Iteration   3: 830.819 ±(99.9%) 6.331 us/op
+                 calculateFactorial·p0.00:   544.768 us/op
+                 calculateFactorial·p0.50:   766.976 us/op
+                 calculateFactorial·p0.90:   1044.480 us/op
+                 calculateFactorial·p0.95:   1097.728 us/op
+                 calculateFactorial·p0.99:   1296.384 us/op
+                 calculateFactorial·p0.999:  3626.222 us/op
+                 calculateFactorial·p0.9999: 6873.851 us/op
+                 calculateFactorial·p1.00:   7020.544 us/op
+
+Iteration   4: 841.101 ±(99.9%) 5.177 us/op
+                 calculateFactorial·p0.00:   557.056 us/op
+                 calculateFactorial·p0.50:   776.192 us/op
+                 calculateFactorial·p0.90:   1060.864 us/op
+                 calculateFactorial·p0.95:   1130.598 us/op
+                 calculateFactorial·p0.99:   1366.016 us/op
+                 calculateFactorial·p0.999:  1705.423 us/op
+                 calculateFactorial·p0.9999: 4301.908 us/op
+                 calculateFactorial·p1.00:   4382.720 us/op
+
+Iteration   5: 859.818 ±(99.9%) 10.865 us/op
+                 calculateFactorial·p0.00:   561.152 us/op
+                 calculateFactorial·p0.50:   774.144 us/op
+                 calculateFactorial·p0.90:   1062.912 us/op
+                 calculateFactorial·p0.95:   1130.496 us/op
+                 calculateFactorial·p0.99:   1439.744 us/op
+                 calculateFactorial·p0.999:  6294.897 us/op
+                 calculateFactorial·p0.9999: 7905.837 us/op
+                 calculateFactorial·p1.00:   8019.968 us/op
+
+
+# Run progress: 60.00% complete, ETA 00:04:43
+# Fork: 7 of 10
+# Warmup Iteration   1: 873.483 ±(99.9%) 13.307 us/op
+# Warmup Iteration   2: 860.292 ±(99.9%) 9.281 us/op
+Iteration   1: 870.721 ±(99.9%) 9.866 us/op
+                 calculateFactorial·p0.00:   497.152 us/op
+                 calculateFactorial·p0.50:   776.192 us/op
+                 calculateFactorial·p0.90:   1077.248 us/op
+                 calculateFactorial·p0.95:   1280.922 us/op
+                 calculateFactorial·p0.99:   2305.516 us/op
+                 calculateFactorial·p0.999:  4349.952 us/op
+                 calculateFactorial·p0.9999: 7759.725 us/op
+                 calculateFactorial·p1.00:   7856.128 us/op
+
+Iteration   2: 860.200 ±(99.9%) 7.041 us/op
+                 calculateFactorial·p0.00:   581.632 us/op
+                 calculateFactorial·p0.50:   782.336 us/op
+                 calculateFactorial·p0.90:   1077.248 us/op
+                 calculateFactorial·p0.95:   1163.264 us/op
+                 calculateFactorial·p0.99:   1556.480 us/op
+                 calculateFactorial·p0.999:  3179.577 us/op
+                 calculateFactorial·p0.9999: 6658.523 us/op
+                 calculateFactorial·p1.00:   7028.736 us/op
+
+Iteration   3: 828.534 ±(99.9%) 7.311 us/op
+                 calculateFactorial·p0.00:   514.560 us/op
+                 calculateFactorial·p0.50:   757.760 us/op
+                 calculateFactorial·p0.90:   1038.336 us/op
+                 calculateFactorial·p0.95:   1114.112 us/op
+                 calculateFactorial·p0.99:   1507.615 us/op
+                 calculateFactorial·p0.999:  4049.228 us/op
+                 calculateFactorial·p0.9999: 7825.035 us/op
+                 calculateFactorial·p1.00:   8134.656 us/op
+
+Iteration   4: 849.429 ±(99.9%) 11.266 us/op
+                 calculateFactorial·p0.00:   524.288 us/op
+                 calculateFactorial·p0.50:   770.048 us/op
+                 calculateFactorial·p0.90:   1045.504 us/op
+                 calculateFactorial·p0.95:   1112.064 us/op
+                 calculateFactorial·p0.99:   1529.856 us/op
+                 calculateFactorial·p0.999:  6760.038 us/op
+                 calculateFactorial·p0.9999: 13327.548 us/op
+                 calculateFactorial·p1.00:   14434.304 us/op
+
+Iteration   5: 837.855 ±(99.9%) 5.675 us/op
+                 calculateFactorial·p0.00:   522.752 us/op
+                 calculateFactorial·p0.50:   771.072 us/op
+                 calculateFactorial·p0.90:   1048.576 us/op
+                 calculateFactorial·p0.95:   1126.400 us/op
+                 calculateFactorial·p0.99:   1390.100 us/op
+                 calculateFactorial·p0.999:  2098.684 us/op
+                 calculateFactorial·p0.9999: 5713.422 us/op
+                 calculateFactorial·p1.00:   6094.848 us/op
+
+
+# Run progress: 70.00% complete, ETA 00:03:32
+# Fork: 8 of 10
+# Warmup Iteration   1: 820.269 ±(99.9%) 11.333 us/op
+# Warmup Iteration   2: 844.182 ±(99.9%) 6.311 us/op
+Iteration   1: 836.302 ±(99.9%) 6.857 us/op
+                 calculateFactorial·p0.00:   509.952 us/op
+                 calculateFactorial·p0.50:   773.120 us/op
+                 calculateFactorial·p0.90:   1069.056 us/op
+                 calculateFactorial·p0.95:   1140.736 us/op
+                 calculateFactorial·p0.99:   1441.792 us/op
+                 calculateFactorial·p0.999:  2541.847 us/op
+                 calculateFactorial·p0.9999: 7576.558 us/op
+                 calculateFactorial·p1.00:   7995.392 us/op
+
+Iteration   2: 880.469 ±(99.9%) 8.014 us/op
+                 calculateFactorial·p0.00:   547.840 us/op
+                 calculateFactorial·p0.50:   800.768 us/op
+                 calculateFactorial·p0.90:   1122.304 us/op
+                 calculateFactorial·p0.95:   1284.096 us/op
+                 calculateFactorial·p0.99:   1569.853 us/op
+                 calculateFactorial·p0.999:  3089.134 us/op
+                 calculateFactorial·p0.9999: 10803.844 us/op
+                 calculateFactorial·p1.00:   11534.336 us/op
+
+Iteration   3: 896.945 ±(99.9%) 10.795 us/op
+                 calculateFactorial·p0.00:   546.816 us/op
+                 calculateFactorial·p0.50:   791.552 us/op
+                 calculateFactorial·p0.90:   1114.112 us/op
+                 calculateFactorial·p0.95:   1345.536 us/op
+                 calculateFactorial·p0.99:   2584.576 us/op
+                 calculateFactorial·p0.999:  4358.144 us/op
+                 calculateFactorial·p0.9999: 7121.827 us/op
+                 calculateFactorial·p1.00:   7184.384 us/op
+
+Iteration   4: 798.118 ±(99.9%) 6.570 us/op
+                 calculateFactorial·p0.00:   522.752 us/op
+                 calculateFactorial·p0.50:   738.304 us/op
+                 calculateFactorial·p0.90:   1013.760 us/op
+                 calculateFactorial·p0.95:   1089.536 us/op
+                 calculateFactorial·p0.99:   1455.186 us/op
+                 calculateFactorial·p0.999:  2908.230 us/op
+                 calculateFactorial·p0.9999: 7516.757 us/op
+                 calculateFactorial·p1.00:   7675.904 us/op
+
+Iteration   5: 790.574 ±(99.9%) 8.664 us/op
+                 calculateFactorial·p0.00:   471.040 us/op
+                 calculateFactorial·p0.50:   733.184 us/op
+                 calculateFactorial·p0.90:   1004.544 us/op
+                 calculateFactorial·p0.95:   1073.152 us/op
+                 calculateFactorial·p0.99:   1395.978 us/op
+                 calculateFactorial·p0.999:  5738.832 us/op
+                 calculateFactorial·p0.9999: 9563.598 us/op
+                 calculateFactorial·p1.00:   9732.096 us/op
+
+
+# Run progress: 80.00% complete, ETA 00:02:21
+# Fork: 9 of 10
+# Warmup Iteration   1: 896.229 ±(99.9%) 14.657 us/op
+# Warmup Iteration   2: 873.820 ±(99.9%) 11.088 us/op
+Iteration   1: 809.226 ±(99.9%) 6.932 us/op
+                 calculateFactorial·p0.00:   505.856 us/op
+                 calculateFactorial·p0.50:   750.592 us/op
+                 calculateFactorial·p0.90:   1018.880 us/op
+                 calculateFactorial·p0.95:   1089.536 us/op
+                 calculateFactorial·p0.99:   1491.722 us/op
+                 calculateFactorial·p0.999:  3255.165 us/op
+                 calculateFactorial·p0.9999: 6666.684 us/op
+                 calculateFactorial·p1.00:   6701.056 us/op
+
+Iteration   2: 849.801 ±(99.9%) 7.243 us/op
+                 calculateFactorial·p0.00:   502.272 us/op
+                 calculateFactorial·p0.50:   775.168 us/op
+                 calculateFactorial·p0.90:   1077.248 us/op
+                 calculateFactorial·p0.95:   1206.272 us/op
+                 calculateFactorial·p0.99:   1585.459 us/op
+                 calculateFactorial·p0.999:  3675.951 us/op
+                 calculateFactorial·p0.9999: 4588.515 us/op
+                 calculateFactorial·p1.00:   4595.712 us/op
+
+Iteration   3: 811.766 ±(99.9%) 8.047 us/op
+                 calculateFactorial·p0.00:   504.320 us/op
+                 calculateFactorial·p0.50:   745.472 us/op
+                 calculateFactorial·p0.90:   1017.856 us/op
+                 calculateFactorial·p0.95:   1089.536 us/op
+                 calculateFactorial·p0.99:   1484.964 us/op
+                 calculateFactorial·p0.999:  4194.304 us/op
+                 calculateFactorial·p0.9999: 7624.527 us/op
+                 calculateFactorial·p1.00:   7667.712 us/op
+
+Iteration   4: 822.410 ±(99.9%) 9.355 us/op
+                 calculateFactorial·p0.00:   519.680 us/op
+                 calculateFactorial·p0.50:   753.664 us/op
+                 calculateFactorial·p0.90:   1035.264 us/op
+                 calculateFactorial·p0.95:   1110.016 us/op
+                 calculateFactorial·p0.99:   1463.276 us/op
+                 calculateFactorial·p0.999:  6217.261 us/op
+                 calculateFactorial·p0.9999: 8880.022 us/op
+                 calculateFactorial·p1.00:   9371.648 us/op
+
+Iteration   5: 820.192 ±(99.9%) 5.911 us/op
+                 calculateFactorial·p0.00:   505.856 us/op
+                 calculateFactorial·p0.50:   756.736 us/op
+                 calculateFactorial·p0.90:   1035.264 us/op
+                 calculateFactorial·p0.95:   1093.632 us/op
+                 calculateFactorial·p0.99:   1372.160 us/op
+                 calculateFactorial·p0.999:  2820.653 us/op
+                 calculateFactorial·p0.9999: 4793.210 us/op
+                 calculateFactorial·p1.00:   4841.472 us/op
+
+
+# Run progress: 90.00% complete, ETA 00:01:10
+# Fork: 10 of 10
+# Warmup Iteration   1: 808.360 ±(99.9%) 12.317 us/op
+# Warmup Iteration   2: 790.568 ±(99.9%) 6.231 us/op
+Iteration   1: 817.662 ±(99.9%) 7.310 us/op
+                 calculateFactorial·p0.00:   514.048 us/op
+                 calculateFactorial·p0.50:   754.688 us/op
+                 calculateFactorial·p0.90:   1036.288 us/op
+                 calculateFactorial·p0.95:   1118.208 us/op
+                 calculateFactorial·p0.99:   1458.176 us/op
+                 calculateFactorial·p0.999:  3708.518 us/op
+                 calculateFactorial·p0.9999: 9453.883 us/op
+                 calculateFactorial·p1.00:   10108.928 us/op
+
+Iteration   2: 795.371 ±(99.9%) 5.643 us/op
+                 calculateFactorial·p0.00:   500.224 us/op
+                 calculateFactorial·p0.50:   739.328 us/op
+                 calculateFactorial·p0.90:   1020.928 us/op
+                 calculateFactorial·p0.95:   1083.392 us/op
+                 calculateFactorial·p0.99:   1394.688 us/op
+                 calculateFactorial·p0.999:  2210.017 us/op
+                 calculateFactorial·p0.9999: 7101.648 us/op
+                 calculateFactorial·p1.00:   8134.656 us/op
+
+Iteration   3: 783.985 ±(99.9%) 6.285 us/op
+                 calculateFactorial·p0.00:   504.832 us/op
+                 calculateFactorial·p0.50:   732.160 us/op
+                 calculateFactorial·p0.90:   988.160 us/op
+                 calculateFactorial·p0.95:   1050.624 us/op
+                 calculateFactorial·p0.99:   1264.599 us/op
+                 calculateFactorial·p0.999:  3568.468 us/op
+                 calculateFactorial·p0.9999: 7410.798 us/op
+                 calculateFactorial·p1.00:   7446.528 us/op
+
+Iteration   4: 863.024 ±(99.9%) 9.758 us/op
+                 calculateFactorial·p0.00:   521.728 us/op
+                 calculateFactorial·p0.50:   791.552 us/op
+                 calculateFactorial·p0.90:   1073.152 us/op
+                 calculateFactorial·p0.95:   1185.792 us/op
+                 calculateFactorial·p0.99:   1466.368 us/op
+                 calculateFactorial·p0.999:  6078.767 us/op
+                 calculateFactorial·p0.9999: 8107.998 us/op
+                 calculateFactorial·p1.00:   8167.424 us/op
+
+Iteration   5: 798.947 ±(99.9%) 5.963 us/op
+                 calculateFactorial·p0.00:   501.760 us/op
+                 calculateFactorial·p0.50:   738.304 us/op
+                 calculateFactorial·p0.90:   1014.784 us/op
+                 calculateFactorial·p0.95:   1089.536 us/op
+                 calculateFactorial·p0.99:   1449.882 us/op
+                 calculateFactorial·p0.999:  2613.043 us/op
+                 calculateFactorial·p0.9999: 4728.492 us/op
+                 calculateFactorial·p1.00:   4898.816 us/op
+
+
+
+Result "com.automaat.cpu_benchmark.FactorialBenchmark.calculateFactorial":
+  N = 608512
+  mean =    820.683 ±(99.9%) 1.262 us/op
+
+  Histogram, us/op:
+    [    0.000,  1250.000) = 591339 
+    [ 1250.000,  2500.000) = 14861 
+    [ 2500.000,  3750.000) = 1253 
+    [ 3750.000,  5000.000) = 475 
+    [ 5000.000,  6250.000) = 318 
+    [ 6250.000,  7500.000) = 138 
+    [ 7500.000,  8750.000) = 50 
+    [ 8750.000, 10000.000) = 39 
+    [10000.000, 11250.000) = 24 
+    [11250.000, 12500.000) = 8 
+    [12500.000, 13750.000) = 4 
+    [13750.000, 15000.000) = 2 
+    [15000.000, 16250.000) = 1 
+    [16250.000, 17500.000) = 0 
+    [17500.000, 18750.000) = 0 
+
+  Percentiles, us/op:
+      p(0.0000) =    467.968 us/op
+     p(50.0000) =    753.664 us/op
+     p(90.0000) =   1037.312 us/op
+     p(95.0000) =   1118.208 us/op
+     p(99.0000) =   1523.712 us/op
+     p(99.9000) =   4898.816 us/op
+     p(99.9900) =   9245.449 us/op
+     p(99.9990) =  13207.587 us/op
+     p(99.9999) =  15417.344 us/op
+    p(100.0000) =  15417.344 us/op
+
+
+# Run complete. Total time: 00:11:49
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                           Mode     Cnt      Score   Error  Units
+FactorialBenchmark.calculateFactorial                             sample  608512    820.683 ± 1.262  us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.00    sample            467.968          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.50    sample            753.664          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.90    sample           1037.312          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.95    sample           1118.208          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.99    sample           1523.712          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.999   sample           4898.816          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p0.9999  sample           9245.449          us/op
+FactorialBenchmark.calculateFactorial:calculateFactorial·p1.00    sample          15417.344          us/op

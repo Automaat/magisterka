@@ -7,9 +7,3 @@
       monitored_host_port: 9100
       monitored_host_path: '/metrics'
       job_name: 'node_exporter'
-
-
-#  docker run -d -p 3000:3000 -v /opt/pf-grafana:/opt/pf-grafana \
-#  -e "GF_AUTH_LDAP_ENABLED=true" \
-#  -e "GF_AUTH_LDAP_CONFIG_FILE=/opt/pf-grafana/ldap.toml" \
-#  grafana/grafana

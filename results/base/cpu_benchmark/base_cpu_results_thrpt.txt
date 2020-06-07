@@ -1,0 +1,128 @@
+# JMH version: 1.22
+# VM version: JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10
+# VM invoker: /opt/java/openjdk/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.automaat.cpu_benchmark.FactorialBenchmark.calculateFactorial
+
+# Run progress: 0.00% complete, ETA 00:11:40
+# Fork: 1 of 10
+# Warmup Iteration   1: 1095.948 ops/s
+# Warmup Iteration   2: 1182.944 ops/s
+Iteration   1: 1231.529 ops/s
+Iteration   2: 1182.592 ops/s
+Iteration   3: 1128.583 ops/s
+Iteration   4: 1205.205 ops/s
+Iteration   5: 1193.833 ops/s
+
+# Run progress: 10.00% complete, ETA 00:10:38
+# Fork: 2 of 10
+# Warmup Iteration   1: 1130.621 ops/s
+# Warmup Iteration   2: 1205.874 ops/s
+Iteration   1: 1240.065 ops/s
+Iteration   2: 1210.368 ops/s
+Iteration   3: 1329.973 ops/s
+Iteration   4: 1150.144 ops/s
+Iteration   5: 1253.546 ops/s
+
+# Run progress: 20.00% complete, ETA 00:09:27
+# Fork: 3 of 10
+# Warmup Iteration   1: 1215.321 ops/s
+# Warmup Iteration   2: 1239.772 ops/s
+Iteration   1: 1270.068 ops/s
+Iteration   2: 1246.324 ops/s
+Iteration   3: 1083.742 ops/s
+Iteration   4: 1229.582 ops/s
+Iteration   5: 1132.078 ops/s
+
+# Run progress: 30.00% complete, ETA 00:08:15
+# Fork: 4 of 10
+# Warmup Iteration   1: 1185.405 ops/s
+# Warmup Iteration   2: 1252.976 ops/s
+Iteration   1: 1275.810 ops/s
+Iteration   2: 1213.518 ops/s
+Iteration   3: 1283.856 ops/s
+Iteration   4: 1294.419 ops/s
+Iteration   5: 1227.521 ops/s
+
+# Run progress: 40.00% complete, ETA 00:07:04
+# Fork: 5 of 10
+# Warmup Iteration   1: 1248.249 ops/s
+# Warmup Iteration   2: 1246.988 ops/s
+Iteration   1: 1126.677 ops/s
+Iteration   2: 1275.056 ops/s
+Iteration   3: 1265.659 ops/s
+Iteration   4: 1218.359 ops/s
+Iteration   5: 1272.585 ops/s
+
+# Run progress: 50.00% complete, ETA 00:05:53
+# Fork: 6 of 10
+# Warmup Iteration   1: 1225.601 ops/s
+# Warmup Iteration   2: 1126.548 ops/s
+Iteration   1: 1215.469 ops/s
+Iteration   2: 1230.635 ops/s
+Iteration   3: 1227.828 ops/s
+Iteration   4: 1264.203 ops/s
+Iteration   5: 1297.455 ops/s
+
+# Run progress: 60.00% complete, ETA 00:04:43
+# Fork: 7 of 10
+# Warmup Iteration   1: 1228.087 ops/s
+# Warmup Iteration   2: 1268.673 ops/s
+Iteration   1: 1275.426 ops/s
+Iteration   2: 1274.906 ops/s
+Iteration   3: 1282.167 ops/s
+Iteration   4: 1169.344 ops/s
+Iteration   5: 1065.578 ops/s
+
+# Run progress: 70.00% complete, ETA 00:03:32
+# Fork: 8 of 10
+# Warmup Iteration   1: 1140.611 ops/s
+# Warmup Iteration   2: 1221.843 ops/s
+Iteration   1: 1231.262 ops/s
+Iteration   2: 1252.994 ops/s
+Iteration   3: 1261.532 ops/s
+Iteration   4: 1264.033 ops/s
+Iteration   5: 1281.662 ops/s
+
+# Run progress: 80.00% complete, ETA 00:02:21
+# Fork: 9 of 10
+# Warmup Iteration   1: 1214.327 ops/s
+# Warmup Iteration   2: 1168.818 ops/s
+Iteration   1: 1280.067 ops/s
+Iteration   2: 1265.743 ops/s
+Iteration   3: 1182.919 ops/s
+Iteration   4: 1246.663 ops/s
+Iteration   5: 1224.804 ops/s
+
+# Run progress: 90.00% complete, ETA 00:01:10
+# Fork: 10 of 10
+# Warmup Iteration   1: 1141.316 ops/s
+# Warmup Iteration   2: 1209.242 ops/s
+Iteration   1: 1230.313 ops/s
+Iteration   2: 1149.095 ops/s
+Iteration   3: 1088.978 ops/s
+Iteration   4: 1244.993 ops/s
+Iteration   5: 1240.838 ops/s
+
+
+Result "com.automaat.cpu_benchmark.FactorialBenchmark.calculateFactorial":
+  1225.800 ±(99.9%) 29.251 ops/s [Average]
+  (min, avg, max) = (1065.578, 1225.800, 1329.973), stdev = 59.088
+  CI (99.9%): [1196.549, 1255.051] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:11:47
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                               Mode  Cnt     Score    Error  Units
+FactorialBenchmark.calculateFactorial  thrpt   50  1225.800 ± 29.251  ops/s

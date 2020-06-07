@@ -5,7 +5,6 @@ import org.openjdk.jmh.annotations.Benchmark
 import java.io.File
 
 open class FileIoBenchmark {
-
     @Benchmark
     fun copyFile(): Long {
         val srcFile = File("/opt/app/test_files/input")

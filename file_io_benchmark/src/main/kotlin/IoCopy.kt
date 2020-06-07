@@ -4,7 +4,6 @@ import java.io.FileOutputStream
 
 
 object IoCopy {
-
     fun copyFile(srcFile: File, targetFile: File): Long {
         var bytesCopied: Long = 0
 
